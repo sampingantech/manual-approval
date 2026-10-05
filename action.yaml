@@ -66,4 +66,5 @@ outputs:
     description: The status of the approval ("approved" or "denied")
 runs:
   using: docker
-  image: docker://ghcr.io/trstringer/manual-approval:1.13.0
+  # Pinned by digest (tag 1.13.0), so that the image cannot change.
+  image: docker://ghcr.io/trstringer/manual-approval@sha256:7cac2dde511346ae728d44e6a4c6385e5cd4b1a612e2158712448cfc4414b15b
